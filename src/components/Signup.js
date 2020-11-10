@@ -83,20 +83,20 @@ const Signup = ({ login }) => {
       !password1.value.trim() ||
       !password2.value.trim()
     ) {
-      return toast.error("Please fill in all the fields");
+      return toast.error("请填完所有表单");
     }
 
     if (password1.value !== password2.value) {
-      return toast.error("Password does not match");
+      return toast.error("密码不一致");
     }
 
     if (username.value.length <= 3) {
-      return toast.error("Username should be atleast four characters long");
+      return toast.error("用户名长度至少为四个字符");
     }
 
     const re = /^[a-z0-9\x20]+$/i;
     if (!re.exec(username.value)) {
-      return toast.error("Choose a better username");
+      return toast.error("请选择一个更好的用户名");
     }
 
     const payload = {
@@ -121,53 +121,53 @@ const Signup = ({ login }) => {
 
   return (
     <StyledAuth>
-      <h2>Create your account</h2>
+      <h2>创建你的账户</h2>
       <form onSubmit={handleSubmit}>
         <div className="input-group">
           <input
             type="text"
-            placeholder="firstname"
+            placeholder="姓"
             value={firstname.value}
             onChange={firstname.onChange}
           />
           <input
             type="text"
-            placeholder="lastname"
+            placeholder="名"
             value={lastname.value}
             onChange={lastname.onChange}
           />
         </div>
         <input
           type="text"
-          placeholder="username"
+          placeholder="用户名"
           value={username.value}
           onChange={username.onChange}
         />
         <input
           type="email"
-          placeholder="email"
+          placeholder="邮箱"
           value={email.value}
           onChange={email.onChange}
         />
         <div className="input-group">
           <input
             type="password"
-            placeholder="password"
+            placeholder="密码"
             value={password1.value}
             onChange={password1.onChange}
           />
           <input
             type="password"
-            placeholder="confirm"
+            placeholder="确认密码"
             value={password2.value}
             onChange={password2.onChange}
           />
         </div>
         <div className="action input-group">
           <span className="pointer" onClick={() => login()}>
-            Signin instead
+            已有账号，去登录
           </span>
-          <button>Sign Up</button>
+          <button>注册</button>
         </div>
       </form>
     </StyledAuth>

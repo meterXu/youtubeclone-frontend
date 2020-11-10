@@ -15,7 +15,7 @@ const Login = ({ signup, loginUser }) => {
     e.preventDefault();
 
     if (!email.value.trim() || !password.value.trim()) {
-      return toast.error("Please fill in all the fields");
+      return toast.error("请填完所有表单");
     }
 
     const payload = {
@@ -33,25 +33,25 @@ const Login = ({ signup, loginUser }) => {
 
   return (
     <StyledAuth>
-      <h2>Login to your account</h2>
+      <h2>登 录</h2>
       <form onSubmit={handleLogin}>
         <input
           type="email"
-          placeholder="email"
+          placeholder="邮箱"
           value={email.value}
           onChange={email.onChange}
         />
         <input
           type="password"
-          placeholder="password"
+          placeholder="密码"
           value={password.value}
           onChange={password.onChange}
         />
         <div className="action input-group">
           <span className="pointer" onClick={() => signup()}>
-            Signup instead
+            立即注册
           </span>
-          <button>Login</button>
+          <button>登录</button>
         </div>
       </form>
     </StyledAuth>

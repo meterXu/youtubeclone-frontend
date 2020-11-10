@@ -28,7 +28,7 @@ const ChannelTabVideo = () => {
   const { videos } = useSelector((state) => state.profile.data);
 
   if (!videos?.length) {
-    return <p>This channel hasn't posted any videos yet</p>;
+    return <p>该频道尚未发布任何视频</p>;
   }
 
   return (

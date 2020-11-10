@@ -6,7 +6,7 @@ const ChannelTabAbout = () => {
     (state) => state.profile.data
   );
 
-  return <p>{about ? about : "No description for this channel"}</p>;
+  return <p>{about ? about : "没有任何简介"}</p>;
 };
 
 export default ChannelTabAbout;

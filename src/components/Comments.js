@@ -83,12 +83,12 @@ const Comments = () => {
 
   return (
     <Wrapper>
-      <h3>{comments?.length} comments</h3>
+      <h3>{comments?.length} 评论</h3>
 
       <div className="add-comment">
         <img src={user.avatar} alt="avatar" />
         <textarea
-          placeholder="Add a public comment"
+          placeholder="发表一个评论"
           value={comment.value}
           onKeyDown={handleAddComment}
           onChange={comment.onChange}
@@ -109,7 +109,7 @@ const Comments = () => {
                   </Link>
                 </span>
                 <span style={{ marginLeft: "0.6rem" }}>
-                  {timeSince(comment.createdAt)} ago
+                  {timeSince(comment.createdAt)} 之前
                 </span>
               </p>
               <p>{comment.text}</p>

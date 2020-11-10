@@ -41,35 +41,35 @@ export const timeSince = (timestamp) => {
   let interval = Math.floor(seconds / 31536000);
 
   if (interval > 1) {
-    return interval + " years";
+    return interval + " 年";
   }
 
   interval = Math.floor(seconds / 2592000);
   if (interval > 1) {
-    return interval + " months";
+    return interval + " 月";
   }
 
   interval = Math.floor(seconds / 86400);
   if (interval > 1) {
-    return interval + " days";
+    return interval + " 天";
   }
 
   interval = Math.floor(seconds / 3600);
   if (interval > 1) {
-    return interval + " hours";
+    return interval + " 小时";
   }
 
   interval = Math.floor(seconds / 60);
   if (interval > 1) {
-    return interval + " minutes";
+    return interval + " 分钟";
   }
 
-  return Math.floor(seconds) + " seconds";
+  return Math.floor(seconds) + " 秒";
 };
 
 export const upload = async (resourceType, file) => {
   const formData = new FormData();
-  formData.append("upload_preset", "youtubeclone");
+  formData.append("upload_preset", "jsdegkph");
   formData.append("file", file);
 
   let toastId = null;
@@ -77,7 +77,7 @@ export const upload = async (resourceType, file) => {
     onUploadProgress: (p) => {
       const progress = p.loaded / p.total;
       if (toastId === null) {
-        toastId = toast("Upload in Progress", {
+        toastId = toast("正在上传", {
           progress,
         });
       } else {

@@ -80,8 +80,8 @@ const TrendingCard = ({ video }) => {
         <p className="secondary">
           <span>{video.User.username}</span>
           <span>•</span>
-          <span>{video.views || 0} views</span>
-          <span>•</span> <span>{timeSince(video.createdAt)} ago</span>
+          <span>{video.views || 0} 次观看</span>
+          <span>•</span> <span>{timeSince(video.createdAt)} 之前</span>
         </p>
         <p className="secondary">{video.description.substr(0, 130)}</p>
       </div>

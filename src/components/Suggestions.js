@@ -21,7 +21,7 @@ const Suggestions = () => {
 
   return (
     <StyledTrending>
-      <h2>Suggestions For You</h2>
+      <h2>推荐的订阅</h2>
       {channels?.map((channel) => (
         <ChannelInfo key={channel.id} channel={channel} />
       ))}

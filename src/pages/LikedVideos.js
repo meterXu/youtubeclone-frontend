@@ -20,11 +20,11 @@ const LikedVideos = () => {
 
   return (
     <StyledTrending>
-      <h2>Liked Videos</h2>
+      <h2>喜欢的影片</h2>
 
       {videos?.length === 0 && (
         <p className="secondary">
-          Videos that you have liked will show up here
+          您喜欢的视频将显示在此处
         </p>
       )}
 

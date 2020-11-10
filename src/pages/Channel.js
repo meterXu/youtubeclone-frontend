@@ -169,7 +169,7 @@ const Channel = () => {
             <div>
               <h3>{profile.username}</h3>
               <span className="secondary">
-                {profile.subscribersCount} subscribers
+                {profile.subscribersCount} 位订阅
               </span>
             </div>
           </div>
@@ -178,7 +178,7 @@ const Channel = () => {
 
           {!profile.isMe && profile.isSubscribed && (
             <Button grey onClick={() => handleUnsubscribe(profile.id)}>
-              Subscribed
+              已订阅
             </Button>
           )}
 
@@ -192,7 +192,7 @@ const Channel = () => {
                 })
               }
             >
-              Subscribe
+              订阅
             </Button>
           )}
         </div>
@@ -203,19 +203,19 @@ const Channel = () => {
               style={tab === "VIDEOS" ? activeTabStyle : {}}
               onClick={() => setTab("VIDEOS")}
             >
-              Videos
+              视频
             </li>
             <li
               style={tab === "CHANNELS" ? activeTabStyle : {}}
               onClick={() => setTab("CHANNELS")}
             >
-              Channels
+              频道
             </li>
             <li
               style={tab === "ABOUT" ? activeTabStyle : {}}
               onClick={() => setTab("ABOUT")}
             >
-              About
+              简介
             </li>
           </ul>
         </div>

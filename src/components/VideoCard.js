@@ -64,8 +64,8 @@ const VideoCard = ({ nousername, hideavatar, video }) => {
             <span className="secondary">{video.User.username}</span>
           )}
           <p className="secondary">
-            <span>{video.views || 0} views</span> <span>•</span>{" "}
-            <span>{timeSince(video.createdAt)} ago</span>
+            <span>{video.views || 0} 次观看</span> <span>•</span>{" "}
+            <span>{timeSince(video.createdAt)} 之前</span>
           </p>
         </div>
       </div>

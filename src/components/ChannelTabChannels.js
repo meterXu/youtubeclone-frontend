@@ -37,7 +37,7 @@ const ChannelTabChannels = () => {
   const { channels } = useSelector((state) => state.profile.data);
 
   if (!channels.length) {
-    return <p>Not subscribed to any channels yet</p>;
+    return <p>尚未订阅任何频道</p>;
   }
 
   return (
@@ -47,7 +47,7 @@ const ChannelTabChannels = () => {
           <div className="channel">
             <img src={channel.avatar} alt="avatar" />
             <h3>{channel.username}</h3>
-            <p className="secondary">{channel.subscribersCount} subscribers</p>
+            <p className="secondary">{channel.subscribersCount} 位订阅</p>
           </div>
         </Link>
       ))}

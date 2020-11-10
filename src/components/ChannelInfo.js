@@ -113,9 +113,9 @@ const ChannelInfo = ({ search, channel }) => {
           <h3>{channel.username}</h3>
 
           <p className="secondary">
-            <span>{channel.subscribersCount} subscribers</span>{" "}
+            <span>{channel.subscribersCount} 订阅者</span>{" "}
             <span className="to-hide">•</span>{" "}
-            <span className="to-hide">{channel.videosCount} videos</span>
+            <span className="to-hide">{channel.videosCount} 视频</span>
           </p>
 
           {channel.channelDescription && (
@@ -138,13 +138,13 @@ const ChannelInfo = ({ search, channel }) => {
             })
           }
         >
-          Subscribe
+          订阅
         </Button>
       )}
 
       {!channel.isMe && channel.isSubscribed && (
         <Button grey onClick={() => handleUnsubscribe(channel.id)}>
-          Subscribed
+          已订阅
         </Button>
       )}
     </Wrapper>

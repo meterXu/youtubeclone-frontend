@@ -33,7 +33,7 @@ const EditProfile = () => {
   const handleLogout = () => {
     dispatch(logout());
     localStorage.removeItem("user");
-    window.location = "/";
+    window.location.reload()
   };
 
   return (
@@ -41,7 +41,7 @@ const EditProfile = () => {
       <Wrapper>
         <div>
           <Button grey onClick={() => setShowModal(true)}>
-            Edit Profile
+          编辑个人资料
           </Button>
           <SignoutIcon onClick={handleLogout} />
         </div>

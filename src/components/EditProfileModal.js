@@ -166,9 +166,9 @@ const EditProfileModal = ({ closeModal }) => {
         <div className="modal-header">
           <h3>
             <CloseIcon onClick={() => closeModal()} />
-            <span>Edit Profile</span>
+            <span>编辑个人资料</span>
           </h3>
-          <Button onClick={handleEditProfile}>Save</Button>
+          <Button onClick={handleEditProfile}>保存</Button>
         </div>
 
         <div className="cover-upload-container">
@@ -210,19 +210,19 @@ const EditProfileModal = ({ closeModal }) => {
         <form>
           <input
             type="text"
-            placeholder="firstname"
+            placeholder="姓"
             value={firstname.value}
             onChange={firstname.onChange}
           />
           <input
             type="text"
-            placeholder="lastname"
+            placeholder="名"
             value={lastname.value}
             onChange={lastname.onChange}
           />
           <textarea
             type="text"
-            placeholder="Tell viewers about your channel"
+            placeholder="向观众介绍您的频道"
             value={channelDesc.value}
             onChange={channelDesc.onChange}
           />

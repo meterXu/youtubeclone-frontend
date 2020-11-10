@@ -20,11 +20,11 @@ const History = ({ nopad }) => {
 
   return (
     <StyledTrending nopad={nopad}>
-      <h2>History</h2>
+      <h2>历史记录</h2>
 
       {!isFetching && !videos.length && (
         <p className="secondary">
-          Videos that you have watched will show up here
+          您观看的视频将显示在此处
         </p>
       )}
 

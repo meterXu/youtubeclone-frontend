@@ -215,8 +215,8 @@ const WatchVideo = () => {
 
           <div className="video-info-stats">
             <p>
-              <span>{video.views} views</span> <span>•</span>{" "}
-              <span>{timeSince(video.createdAt)} ago</span>
+              <span>{video.views} 次观看</span> <span>•</span>{" "}
+              <span>{timeSince(video.createdAt)} 之前</span>
             </p>
 
             <div className="likes-dislikes flex-row">
@@ -247,18 +247,18 @@ const WatchVideo = () => {
                   </Link>
                 </h4>
                 <span className="secondary small">
-                  {video.subscribersCount} subscribers
+                  {video.subscribersCount} 位订阅
                 </span>
               </div>
             </div>
             {!video.isVideoMine && !video.isSubscribed && (
               <Button onClick={() => handleSubscribe({ ...video.User })}>
-                Subscribe
+                订阅
               </Button>
             )}
             {!video.isVideoMine && video.isSubscribed && (
               <Button grey onClick={() => handleUnsubscribe(video.User.id)}>
-                Subscribed
+                已订阅
               </Button>
             )}
           </div>
@@ -269,7 +269,7 @@ const WatchVideo = () => {
       </div>
 
       <div className="related-videos">
-        <h3 style={{ marginBottom: "1rem" }}>Up Next</h3>
+        <h3 style={{ marginBottom: "1rem" }}>接下来播放</h3>
         {next
           .filter((vid) => vid.id !== video.id)
           .slice(0, 3)

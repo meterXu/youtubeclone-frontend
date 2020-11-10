@@ -37,7 +37,7 @@ const Trending = () => {
 
   return (
     <StyledTrending>
-      <h2>Trending</h2>
+      <h2>时下流行</h2>
 
       <div className="trending">
         {!isFetching &&

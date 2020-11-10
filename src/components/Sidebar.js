@@ -88,7 +88,7 @@ const Sidebar = () => {
       >
         <div className="icon">
           <HomeIcon />
-          <span>Home</span>
+          <span>主页</span>
         </div>
       </NavLink>
 
@@ -99,7 +99,7 @@ const Sidebar = () => {
       >
         <div className="icon">
           <TrendingIcon />
-          <span>Trending</span>
+          <span>时下流行</span>
         </div>
       </NavLink>
 
@@ -110,7 +110,7 @@ const Sidebar = () => {
       >
         <div className="icon">
           <SubIcon />
-          <span>Subscriptions</span>
+          <span>订阅内容</span>
         </div>
       </NavLink>
 
@@ -123,7 +123,7 @@ const Sidebar = () => {
       >
         <div className="icon">
           <LibIcon />
-          <span>Library</span>
+          <span>媒体库</span>
         </div>
       </NavLink>
 
@@ -134,7 +134,7 @@ const Sidebar = () => {
       >
         <div className="icon">
           <HistoryIcon />
-          <span>History</span>
+          <span>历史记录</span>
         </div>
       </NavLink>
 
@@ -145,7 +145,7 @@ const Sidebar = () => {
       >
         <div className="icon">
           <VidIcon />
-          <span>Your videos</span>
+          <span>你的视频</span>
         </div>
       </NavLink>
 
@@ -156,7 +156,7 @@ const Sidebar = () => {
       >
         <div className="icon">
           <LikeIcon />
-          <span>Liked videos</span>
+          <span>喜欢的影片</span>
         </div>
       </NavLink>
 

@@ -20,7 +20,7 @@ const UploadVideo = () => {
       const size = file.size / 1000000;
 
       if (size > 30) {
-        return toast.error("Sorry, file size should be less than 30MB");
+        return toast.error("抱歉, 视频大小必须小于 30MB");
       }
 
       const url = URL.createObjectURL(file);

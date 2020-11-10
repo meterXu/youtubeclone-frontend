@@ -56,7 +56,7 @@ const Home = () => {
 
   return (
     <StyledHome>
-      <h2>Recommended</h2>
+      <h2>推荐</h2>
 
       <VideoGrid>
         {!isFetching &&

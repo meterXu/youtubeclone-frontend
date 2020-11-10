@@ -138,7 +138,7 @@ const UploadVideoModal = ({ previewVideo, closeModal, url, thumbnail }) => {
       setTab("FORM");
     } else {
       if (!title.value.trim() || !description.value.trim()) {
-        return toast.error("Please fill in all the fields");
+        return toast.error("请填完所有表单");
       }
 
       const newVideo = {
@@ -175,11 +175,11 @@ const UploadVideoModal = ({ previewVideo, closeModal, url, thumbnail }) => {
         <div className="modal-header">
           <div className="modal-header-left">
             <CloseIcon onClick={() => closeModal()} />
-            <h3>Upload Video</h3>
+            <h3>上传视频</h3>
           </div>
           <div style={{ display: url ? "block" : "none" }}>
             <Button onClick={handleTab}>
-              {tab === "PREVIEW" ? "Next" : "Upload"}
+              {tab === "PREVIEW" ? "下一步" : "上传"}
             </Button>
           </div>
         </div>
@@ -192,15 +192,15 @@ const UploadVideoModal = ({ previewVideo, closeModal, url, thumbnail }) => {
 
         {tab === "FORM" && (
           <div className="tab video-form">
-            <h2>Details</h2>
+            <h2>详情</h2>
             <input
               type="text"
-              placeholder="Enter the title"
+              placeholder="标题"
               value={title.value}
               onChange={title.onChange}
             />
             <textarea
-              placeholder="Tell viewers about your video"
+              placeholder="描述你的视频"
               value={description.value}
               onChange={description.onChange}
             />
