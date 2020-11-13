@@ -1,14 +1,14 @@
-# Youtube Clone Frontend
+# Youtube 前端克隆版
 
-[中文](./README_ZH.md)
+[English](./README.md)
 
-Youtube clone using PERN stack (Postgres, Express, React, Node). 
+使用PERN堆栈（Postgres，Express，React，Node）进行YouTube克隆。
 
-This is the frontend repository, built with React + Redux. If you are looking for the backend repository, [click here](https://github.com/manikandanraji/youtubeclone-backend)
+这是使用React + Redux构建的前端存储库。如果您正在寻找后端存储库， [点击这里](https://github.com/manikandanraji/youtubeclone-backend)
 
-Check out the [deployed site](https://utubeclone.netlify.app/)
+在线demo [已发布的站点](https://utubeclone.netlify.app/)
 
-## Core packages
+## 核心包
 
 1. Redux - State Management
 2. React Router - Routing
